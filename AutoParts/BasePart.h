@@ -7,8 +7,7 @@ class BasePart
 {
 protected:
 	int _PartNo = 0;
-	string _PartDescription = "";
-	int _PartMaker = 0;
+
 public:
 	BasePart(int PartNo)
 	{

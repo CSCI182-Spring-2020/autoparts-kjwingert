@@ -1,20 +1,19 @@
 #pragma once
+#include <iostream>
 #include "Autopart.h"
+#include "BasePart.h"
 
 using namespace std;
 
-class EnginePart
+class EnginePart : AutoPart
 {
-public:
+private:
 	int _EngineSpecNo = 0;
-	EnginePart(int, string, int, int);
+
+public:
+	EnginePart(int, int, string, int);
+
+	virtual ~EnginePart();
+
+	virtual void printPart();
 };
-
-EnginePart::EnginePart(int partNo, string partDescription, int partMaker, int EngineSpecNo) : AutoPart(partNo, partDescription, partMaker)
-{
-	{
-		_EngineSpecNo = 0;
-		cout << "In EnginePart Constructor"
-	}
-}
-

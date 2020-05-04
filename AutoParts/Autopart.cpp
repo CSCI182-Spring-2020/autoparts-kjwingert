@@ -1,4 +1,3 @@
-#include "Autopart.h"
 #pragma once
 #include <iostream>
 #include "Autopart.h"
