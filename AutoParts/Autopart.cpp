@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Autopart.h"
+#include "BasePart.h"
 
 using namespace std;
 
@@ -11,6 +12,11 @@ AutoPart::AutoPart(int partNo, string partDescription, int partMaker) : BasePart
 		_PartMaker = partMaker;
 		cout << "In AutoPart Destructor: " << _PartDescription << endl;
 	}
+}
+
+AutoPart::~AutoPart()
+{
+	cout << "AutoPart Destructor " << _PartDescription << endl;
 }
 
 /// <summary>
